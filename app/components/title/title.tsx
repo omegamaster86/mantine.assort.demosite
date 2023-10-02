@@ -5,8 +5,8 @@ import Balancer from 'react-wrap-balancer'
 
 export const Title= () => {
   return (
-    <div className='relative box-border m-0'>
-      <Container  className='relative my-32 mx-0 sm:my-20'>
+    <div className='relative box-border text-center m-0'>
+      <Container  className='relative  my-32 mx-0 sm:my-20'>
         <h1 className='text-4xl font-black p-0 m-0 md:text-6xl'>
           <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'grape' }} inherit>
               <Balancer>All-in-One App for Slack</Balancer>
