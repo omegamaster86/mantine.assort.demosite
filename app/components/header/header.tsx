@@ -33,7 +33,7 @@ export const Header = () => {
   ));
 
   return (
-    <header className={classes.header}>
+    <header className='h-14 pt-7'>
       <Container size="md" className={classes.inner}>
         <MantineLogo size={28} />
         <Group gap={5} visibleFrom="xs">
