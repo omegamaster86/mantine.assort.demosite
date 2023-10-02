@@ -1,6 +1,7 @@
 import { Container, Text, Button, Group } from '@mantine/core';
 import { GithubIcon } from '@mantine/ds';
 import classes from './title.module.css';
+import Balancer from 'react-wrap-balancer'
 
 export const Title= () => {
   return (
@@ -8,13 +9,15 @@ export const Title= () => {
       <Container  className='relative my-32 mx-0 sm:my-20'>
         <h1 className='text-4xl font-black p-0 m-0 md:text-6xl'>
           <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'grape' }} inherit>
-              All-in-One App for Slack
+              <Balancer>All-in-One App for Slack</Balancer>
           </Text>
         </h1>
 
         <Text className={classes.description} color="dimmed">
-          Build fully functional accessible web applications with ease – Mantine includes more than
-          100 customizable components and hooks to cover you in any situation
+            <Balancer>
+                Build fully functional accessible web applications with ease – Mantine includes more than
+                100 customizable components and hooks to cover you in any situation
+            </Balancer>
         </Text>
 
         <Group className={classes.controls}>
