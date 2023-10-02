@@ -1,17 +1,15 @@
 import { Container, Text, Button, Group } from '@mantine/core';
 import { GithubIcon } from '@mantine/ds';
-import classes from './HeroTitle.module.css';
+import classes from './title.module.css';
 
-export function HeroTitle() {
+export const Title= () => {
   return (
-    <div className={classes.wrapper}>
-      <Container size={700} className={classes.inner}>
-        <h1 className={classes.title}>
-          A{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-            fully featured
-          </Text>{' '}
-          React components and hooks library
+    <div className='relative box-border m-0'>
+      <Container  className='relative my-32 mx-0 sm:my-20'>
+        <h1 className='text-4xl font-black p-0 m-0 md:text-6xl'>
+          <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'grape' }} inherit>
+              All-in-One App for Slack
+          </Text>
         </h1>
 
         <Text className={classes.description} color="dimmed">
