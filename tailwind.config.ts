@@ -13,6 +13,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'regal-red': '#f03e3e',
+        'regal-purple': '#ae3ec9',
+      },
     },
     fontFamily: {
       'greycliff': ['Greycliff','CF'],
