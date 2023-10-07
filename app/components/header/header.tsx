@@ -11,11 +11,11 @@ const Menu = () => {
             component="a"
             href="https://github.com/mantinedev/mantine"
             size="md"
-            className='h-14 px-9 mr-5'
+            className='h-15 px-9 mr-5'
             color="black"
             // leftSection={<BrandSlack size={14} />}
             >
-            <Image src="/assets/Slackicon.png" width={16} height={16} alt='logo' className=' mr-3'/>
+            <Image src="/assets/Slackicon.png" width={15} height={15} alt='logo' className=' mr-3'/>
             Slackに追加
             </Button>
             <Button
