@@ -31,7 +31,7 @@ export const Menu = () => {
  )
 }
 
-export const Attention = () => {
+const Attention = () => {
   return(
   <div>
     <div className=' py-3 mt-28 border-solid border-red-600 border'>
