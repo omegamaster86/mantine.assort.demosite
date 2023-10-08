@@ -33,7 +33,7 @@ import {
     },
   ];
   
-  export const FeaturesCards1 = () => {
+  export const FeaturesCards3 = () => {
     const theme = useMantineTheme();
     const features = mockdata.map((feature) => (
       <Card key={feature.title} shadow="md" radius="md" className="" padding="xl">
