@@ -44,7 +44,7 @@ const Attention = () => {
             />
          <div className=' text-red-500 pl-3.5'><Balancer>既にAssortをお使いの方は、アプリをインストールし直す必要があります</Balancer></div>
       </div>
-      <div className=''><Balancer>アップデートによりアプリの再インストールが必要になりました。お手数ですが、</Balancer></div>{' '}
+      <div><Balancer>アップデートによりアプリの再インストールが必要になりました。お手数ですが、</Balancer></div>{' '}
       <div><Balancer>「Slackに追加」ボタンから再度インストールをお願いいたします。</Balancer></div>
     </div>
   </div>
