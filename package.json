@@ -18,7 +18,9 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-wrap-balancer": "^1.1.0"
+    "react-iframe": "^1.8.5",
+    "react-wrap-balancer": "^1.1.0",
+    "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
     "@types/node": "latest",
