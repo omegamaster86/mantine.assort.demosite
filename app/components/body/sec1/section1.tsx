@@ -38,7 +38,6 @@ import {
         <feature.icon
           style={{ width: rem(50), height: rem(50), }}
           stroke={2}
-          color={theme.colors.blue[6]}
         />
         <Text fz="lg" fw={500} className="after:content-[''] after:block after:bg-regal-pink after:w-11 after:h-0.5 after:my-3">
           {feature.title}
