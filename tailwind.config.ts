@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         'regal-red': '#f03e3e',
         'regal-purple': '#ae3ec9',
+        'regal-pink': '#ff8787',
       },
     },
     fontFamily: {
