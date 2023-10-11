@@ -12,22 +12,22 @@ import {
     ThemeIcon,
     AspectRatio,
   } from '@mantine/core';
-  import { IconGauge, IconUser, IconNumber1 } from '@tabler/icons-react';
+  import { IconCloud, IconSpyOff, IconNumber1 } from '@tabler/icons-react';
   import Balancer from 'react-wrap-balancer'
-  import { Video1 } from '../../youtube/video1';
+  import { Video1 } from '../../youtube/video';
   
   const mockdata = [
     {
       title: '設定レス・運用レス',
       description:
         'Slackアプリをインストールするだけで使えます。クラウドベースのため運用は一切要りません。',
-      icon: IconGauge,
+      icon: IconCloud,
     },
     {
       title: 'プライバシーに配慮',
       description:
         '私達はお客様の対話データを一切保持しません。データ漏洩を心配する必要はありません。',
-      icon: IconUser,
+      icon: IconSpyOff,
     },
   ];
   
@@ -36,14 +36,14 @@ import {
     const features = mockdata.map((feature) => (
       <Card key={feature.title} shadow="md" radius="md" className="border-solid" padding="xl">
         <feature.icon
-          style={{ width: rem(50), height: rem(50) }}
+          style={{ width: rem(50), height: rem(50), }}
           stroke={2}
           color={theme.colors.blue[6]}
         />
-        <Text fz="lg" fw={500} className="after:content-[''] after:block after:bg-blue-600 after:w-11 after:h-0.5" mt="md">
+        <Text fz="lg" fw={500} className="after:content-[''] after:block after:bg-regal-pink after:w-11 after:h-0.5 after:my-3">
           {feature.title}
         </Text>
-        <Text fz="sm" c="dimmed" mt="sm">
+        <Text fz="md">
           {feature.description}
         </Text>
       </Card>
