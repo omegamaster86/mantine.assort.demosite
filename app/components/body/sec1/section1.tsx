@@ -93,6 +93,10 @@ import {
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing="xl" mt={50}>
           {features}
         </SimpleGrid>
+        <Text ta="center" mt={"3.75rem"}>
+            ※ ChatGPTは必ずしも正確な情報を返すとは限りません。詳しくは
+            <a href='' className='text-blue-600 no-underline'>免責事項</a>をご確認ください。
+        </Text>
       </Container>
     );
   }
