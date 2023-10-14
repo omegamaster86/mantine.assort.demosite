@@ -10,9 +10,9 @@ interface FeatureProps extends React.ComponentPropsWithoutRef<'div'> {
   description: string;
 }
 
-function Feature({ icon: Icon, title, description, className, }: FeatureProps) {
+function Feature({ icon: Icon, title, description }: FeatureProps) {
   return (
-    <div className='relative py-8'>
+    <div className='relative pt-8 pb-5'>
       <div className={`absolute top-0 left-0 z-10 w-36 h-20 bg-regal-pink opacity-10`} />
 
         <div className='relative z-20 left-6 -top-4 '>
@@ -91,7 +91,7 @@ export const FeaturesAsymmetrical = () => {
             <Video2/>
         </AspectRatio>
       </Container>
-      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50} mt="sm">
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={40} mt="sm">
         {items}
       </SimpleGrid>
     </Container>
