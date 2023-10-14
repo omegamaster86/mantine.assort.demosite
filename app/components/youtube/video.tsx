@@ -22,3 +22,14 @@ export const Video2 = () => {
         />
     );
 }
+
+export const Video3 = () => {
+    
+    return (
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/QjVH9j0vCUc"
+          title="Youtube Video Player"
+          allow="accelerometer; autoplay; clipboard-write; fullscreen; encrypted-media; gyroscope;"
+        />
+    );
+}
