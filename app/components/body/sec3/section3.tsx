@@ -12,34 +12,40 @@ import {
     ThemeIcon,
     AspectRatio,
   } from '@mantine/core';
-  import { IconCloud, IconSpyOff, IconNumber1 } from '@tabler/icons-react';
+  import { IconClick, IconHash, IconNumber3, IconBrandSlack } from '@tabler/icons-react';
   import Balancer from 'react-wrap-balancer'
-  import { Video1 } from '../../youtube/video';
+  import { Video3 } from '../../youtube/video';
   
   const mockdata = [
     {
-      title: '設定レス・運用レス',
+      title: 'ワンクリックで出勤',
       description:
-        'Slackアプリをインストールするだけで使えます。クラウドベースのため運用は一切要りません。',
-      icon: IconCloud,
+        'Slack上でワンクリックで出勤できます。コマンド入力すら不要です。',
+      icon: IconClick,
     },
     {
-      title: 'プライバシーに配慮',
+      title: 'チャンネルごとの勤怠',
       description:
-        '私達はお客様の対話データを一切保持しません。データ漏洩を心配する必要はありません。',
-      icon: IconSpyOff,
+        'プロジェクトやチームごとに勤怠を分けて管理することができます。',
+      icon: IconHash,
+    },
+    {
+      title: '管理画面はSlackログインで',
+      description:
+        '管理画面はSlackログインが使えるため、パスワード管理が要りません。',
+      icon: IconBrandSlack,
     },
   ];
   
   export const FeaturesCards3 = () => {
     const theme = useMantineTheme();
     const features = mockdata.map((feature) => (
-      <Card key={feature.title} shadow="md" radius="md" className="border-solid" padding="xl">
+      <Card key={feature.title} shadow="md" radius="md" className="border-solid" padding="1.5rem">
         <feature.icon
           style={{ width: rem(50), height: rem(50), }}
-          stroke={2}
+          stroke={1.5}
         />
-        <Text fz="lg" fw={500} className="after:content-[''] after:block after:bg-regal-pink after:w-11 after:h-0.5 after:my-3">
+        <Text fz="lg" fw={700} mt="15px" className=" after:content-[''] after:block after:bg-regal-pink after:w-11 after:h-0.5 after:my-3">
           {feature.title}
         </Text>
         <Text fz="md">
@@ -58,26 +64,26 @@ import {
                 gradient={{ from: 'red', to: 'grape' }}
                 radius="xl"
                 >
-                <IconNumber1/>
+                <IconNumber3/>
             </ThemeIcon>
         </Group>
         <Group justify="center" >
             <Text fw={800} fz={35} variant="gradient" gradient={{ from: 'red', to: 'grape' }} >
-                @assort
+                /timetracker
             </Text>
         </Group>
   
         <Title order={1} fw={900} fz={50} ta="center" mt="sm">
-            SlackでChatGPTの力を最大限に
+            効率的な勤怠管理
         </Title>
   
         <Text fz={20} ta="center" mt="md" >
-            <Balancer>チーム全員で使えるChatGPTを考えたことはありますか？</Balancer>{' '}
-            <Balancer>AIのチカラを最大限活用し、競合他社と差をつけましょう。</Balancer>
+            <Balancer>スプレッドシートでアルバイトや業務委託の勤怠管理をしていませんか？</Balancer>{' '}
+            <Balancer>Assortは無駄な手作業を自動化し、時間と手間を大幅に削減します。</Balancer>
         </Text>
 
         <AspectRatio ratio={16 / 9} mt="4rem" w="100%">
-            <Video1/>
+            <Video3/>
         </AspectRatio>
 
         <Group justify="center" pt={"5rem"}>
@@ -87,16 +93,16 @@ import {
         </Group>
   
         <Title order={1} fw={900} fz={50} ta="center" mt="sm" >
-            AssortでChatGPTを使う理由
+            Slackベースのデザイン
         </Title>
+
+        <Text fz={20} ta="center" mt="md" >
+            <Balancer>Slackを中心に設計されており、直感的な操作が可能です。</Balancer>
+        </Text>
   
-        <SimpleGrid cols={{ base: 1, md: 2 }} spacing="xl" mt={50}>
+        <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
           {features}
         </SimpleGrid>
-        <Text ta="center" mt={"3.75rem"}>
-            ※ ChatGPTは必ずしも正確な情報を返すとは限りません。詳しくは
-            <a href='' className='text-blue-600 no-underline'>免責事項</a>をご確認ください。
-        </Text>
       </Container>
     );
   }
