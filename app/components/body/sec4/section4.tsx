@@ -1,4 +1,4 @@
-import { Group, Text } from '@mantine/core';
+import { Group } from '@mantine/core';
 import Image from 'next/image'
 import { Menu } from '../../title/title'
 
