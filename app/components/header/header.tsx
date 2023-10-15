@@ -1,7 +1,5 @@
 'use client';
-import { Container, Burger, Button } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantine/ds';
+import { Container, Button } from '@mantine/core';
 import Image from "next/image";
 
 export const Menu = () => {
