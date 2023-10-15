@@ -32,14 +32,12 @@ export const Menu = () => {
 }
 
 export const Header = () => {
-  const [opened, { toggle }] = useDisclosure(false);
 
   return (
     <header className='h-14 pt-7'>
       <Container size="md" className='h-14 flex justify-between items-center'>
-        <MantineLogo size={28} />
-          <Menu/>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <div className=' text-5xl font-black'>Assort</div>
+        <Menu/>
       </Container>
     </header>
   );
